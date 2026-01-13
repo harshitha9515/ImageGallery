@@ -1,4 +1,5 @@
 🖼 Image Gallery
+
 A modern, feature-rich Image Gallery web application built using HTML, CSS, and JavaScript.
 This project delivers a smooth, interactive, and visually appealing gallery experience with advanced functionality like lightbox preview, category filters, favorites, recycle bin, slideshow, themes, dark mode, zoom, fullscreen, and keyboard navigation.
 
@@ -96,6 +97,7 @@ No frameworks or libraries used — pure Vanilla JS.
 📂 Project Structure
 
 image-gallery/
+
 │
 ├── index.html      # Main HTML structure
 
