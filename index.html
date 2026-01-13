@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌈 Pro Advanced Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🌈 Pro Advanced Image Gallery</h1>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search images...">
+    <button id="darkToggle">🌙</button>
+    <select id="themeSelect">
+      <option value="default">Default Theme</option>
+      <option value="blue">Blue Theme</option>
+      <option value="green">Green Theme</option>
+    </select>
+  </div>
+</header>
+
+<div class="filters">
+  <button class="active" data-filter="all">All</button>
+  <button data-filter="nature">Nature</button>
+  <button data-filter="birds">Birds</button>
+  <button data-filter="animals">Animals</button>
+  <button data-filter="flowers">Flowers</button>
+  <button data-filter="vehicles">Vehicles</button>
+  <button data-filter="favorites">❤ Favorites</button>
+  <button data-filter="recycle">🗑 Recycle Bin</button>
+  <button id="slideshowBtn">▶ Slideshow</button>
+</div>
+
+<div class="gallery" id="gallery"></div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <div class="lightbox-controls">
+    <button id="zoomIn">+</button>
+    <button id="zoomOut">−</button>
+    <button id="addFav">❤</button>
+    <button id="downloadImg">⬇</button>
+    <button id="deleteImg">🗑</button>
+    <button id="fullscreenBtn">⛶</button>
+  </div>
+  <img id="lightboxImg">
+  <div id="metadata">
+    <p id="title"></p>
+    <p id="desc"></p>
+    <p id="date"></p>
+    <p id="res"></p>
+  </div>
+  <p id="counter"></p>
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

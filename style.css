@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  transition: 0.4s;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+#search {
+  padding: 8px;
+  width: 220px;
+}
+
+#darkToggle, #themeSelect {
+  padding: 8px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+.filters button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+  transition: 0.3s;
+}
+
+.filters button.active,
+.filters button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  filter: brightness(1);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 70%;
+  transition: transform 0.3s;
+}
+
+.lightbox-controls {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.lightbox-controls button {
+  font-size: 24px;
+  padding: 5px 12px;
+  cursor: pointer;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border-radius: 5px;
+}
+
+#metadata {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Navigation */
+.lightbox button.prev { left: 30px; top: 50%; transform: translateY(-50%); position: absolute; font-size: 40px; color: white; background: none; border: none; cursor: pointer; }
+.lightbox button.next { right: 30px; top: 50%; transform: translateY(-50%); position: absolute; font-size: 40px; color: white; background: none; border: none; cursor: pointer; }
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Themes */
+body.theme-blue { background:#e0f0ff; }
+body.theme-green { background:#e0ffe0; }
