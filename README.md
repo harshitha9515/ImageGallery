@@ -1,104 +1,105 @@
-🖼 Image Gallery
+# 🖼 Image Gallery
 
-A modern, feature-rich Image Gallery web application built using HTML, CSS, and JavaScript.
-This project delivers a smooth, interactive, and visually appealing gallery experience with advanced functionality like lightbox preview, category filters, favorites, recycle bin, slideshow, themes, dark mode, zoom, fullscreen, and keyboard navigation.
+A modern, feature-rich **Image Gallery web application** built using **HTML, CSS, and JavaScript**.
+This project delivers a smooth, interactive, and visually appealing gallery experience with advanced functionality such as **lightbox preview, category filters, favorites, recycle bin, slideshow, themes, dark mode, zoom, fullscreen, and keyboard navigation**.
 
-Designed to demonstrate front-end development skills, DOM manipulation, and UI/UX best practices.
+Designed to demonstrate **front-end development skills**, **DOM manipulation**, and **UI/UX best practices**.
 
-✨ Features
-Responsive grid-based image layout
+---
 
-Drag & drop image reordering
+## ✨ Features
 
-🔍 Filters & Categories
+### 📱 Responsive Layout
+
+* Responsive grid-based image layout
+* Optimized for desktop, tablet, and mobile screens
+
+### 🔄 Image Management
+
+* Drag & drop image reordering
+
+---
+
+### 🔍 Filters & Categories
 
 Filter images by:
 
-Nature
+* Nature
+* Birds
+* Animals
+* Flowers
+* Vehicles
 
-Birds
+Additional sections:
 
-Animals
+* ⭐ Dedicated **Favorites** section
+* 🗑 **Recycle Bin** for deleted images
 
-Flowers
+---
 
-Vehicles
+### 🌙 Dark Mode & Themes
 
-Dedicated Favorites section
+* Toggle **Dark Mode**
+* Multiple theme options:
 
-Recycle Bin for deleted images
+  * Default Theme
+  * Blue Theme
+  * Green Theme
 
-🌙 Dark Mode & Themes
+---
 
-Toggle Dark Mode
+### 🔦 Advanced Lightbox
 
-Multiple theme options:
+* Fullscreen image preview
+* Next / Previous navigation
+* Image counter
+* Zoom In / Zoom Out
+* Double-click zoom
+* Fullscreen mode
+* Download image
+* Add to favorites
+* Delete image (moves to recycle bin)
 
-Default
+---
 
-Blue Theme
+### ▶ Slideshow
 
-Green Theme
+* Automatic slideshow mode
+* Smooth image transitions
 
-🔦 Advanced Lightbox
+---
 
-Fullscreen image preview
+### ⌨ Keyboard Shortcuts
 
-Next / Previous navigation
+* ← / → → Navigate images
+* * / - → Zoom in / out
+* F → Add to favorites
+* Delete → Delete image
+* Double-click → Toggle zoom
 
-Image counter
+---
 
-Zoom In / Zoom Out
+### 💾 Local Storage
 
-Double-click zoom
+* Favorites persist even after page reload
+* Deleted images stored in recycle bin using **localStorage**
 
-Fullscreen mode
+---
 
-Download image
+## 🛠 Tech Stack
 
-Add to favorites
+* **HTML5** – Structure
+* **CSS3** – Styling, themes, animations
+* **JavaScript (ES6)** – Logic, DOM manipulation, localStorage
 
-Delete image (moves to recycle bin)
+---
 
-▶ Slideshow
+## 📂 Project Structure
 
-Automatic slideshow mode
-
-Smooth image transitions
-
-⌨ Keyboard Shortcuts
-
-← / → → Navigate images
-
-+ / - → Zoom in / out
-
-F → Add to favorites
-
-Delete → Delete image
-
-Double-click → Toggle zoom
-
-💾 Local Storage
-
-Favorites persist even after page reload
-
-Deleted images stored in recycle bin using localStorage
-
-🛠 Tech Stack
-
-HTML5 – Structure
-
-CSS3 – Styling, themes, animations
-
-JavaScript (ES6) – Logic, DOM manipulation, localStorage
-
-No frameworks or libraries used — pure Vanilla JS.
-
-📂 Project Structure
-
+```
 image-gallery/
-
 │
+
 ├── index.html      # Main HTML structure
 
 ├── style.css       # Styling, themes, dark mode
@@ -106,40 +107,41 @@ image-gallery/
 ├── script.js       # Gallery logic & interactions
 
 └── README.md       # Project documentation
+```
 
-⚙ How to Run Locally
+---
 
-Clone the repository
+## ⚙ How to Run Locally
 
+### Step 1: Clone the repository
+
+```bash
 git clone https://github.com/your-username/image-gallery.git
+```
 
+### Step 2: Navigate to the project folder
 
-Navigate to the project folder
-
+```bash
 cd image-gallery
+```
 
+### Step 3: Open `index.html`
 
-Open index.html
+* Double-click the file
+  **OR**
+* Use **Live Server** in VS Code
 
-Double-click the file
-or
+✅ No installations required.
 
-Use Live Server in VS Code
+---
 
-That’s it — no installations required ✅
+## 📌 Key Learning Outcomes
 
-📌 Key Learning Outcomes
+* DOM manipulation & event handling
+* Lightbox implementation from scratch
+* localStorage usage
+* Responsive layouts using CSS Grid
+* Theme switching & dark mode logic
+* Keyboard accessibility
+* UI/UX design principles
 
-DOM manipulation & event handling
-
-Lightbox implementation from scratch
-
-localStorage usage
-
-Responsive layouts with CSS Grid
-
-Theme switching & dark mode logic
-
-Keyboard accessibility
-
-UI/UX design principles
